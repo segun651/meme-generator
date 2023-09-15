@@ -1,0 +1,133 @@
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+     
+ header {
+    display: grid;
+    align-items: center;
+     font-size: 12px;
+     font-weight: bold;
+     font-family:cursive;
+     height: 10vh;
+     text-align: center;
+      color:white;
+    
+}
+  nav {
+     background-color: blueviolet;
+     display: flex;
+     gap: 20px;
+     align-items: center;
+  }
+ nav img{
+     width:80px;
+    height:10vh;
+    object-fit: fill;
+    
+ }
+    nav h3 {
+         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         font-family: 20px;
+    }
+
+      .gridbox {
+         
+           margin-top: 5vh;
+         height: 80vh;
+      }
+        input[type=text] {
+           width: 40%;
+          padding: 10px;
+          border: 1px solid black;
+          border-radius: 5px;
+          font-size: 20px;
+        }
+       
+      .input {
+         display: flex;
+         justify-content: space-evenly;
+         height: 10vh;
+      }
+          .btn {
+            text-align: center;
+            height: 20vh;
+            display: grid;
+            align-items: center;
+          }
+            button {
+              width: 50%;
+              margin: auto;
+              padding: 14px 10px;
+              border-radius: 10px;
+              background-color: blueviolet;
+              cursor: pointer;
+              color: white;
+              border: none;
+              font-size: 18px;
+            }
+      
+              .box {
+                position: relative;
+                width: 100%;
+                text-align: center;
+                
+               
+              }
+                .box img {
+                   width: 60vw;
+                   display: block; 
+                    margin: auto;
+                    height: 50vh;
+                    border-radius: 10px;
+                }
+                .box h2 {
+                  display: flex;
+                  font-size: 40px;
+                  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                  position: absolute;
+                   top: 0;
+                   text-align: center;
+                   left: 50%;
+                   color: white;
+                   transform: translateX(-50%);
+                }
+                .box h3 {
+                  position: absolute;
+                   bottom: 0;
+                   font-size: 40px;
+                   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                   text-align: center;
+              left: 50%;
+              transform: translateX(-50%);
+                   color: white;
+                }
+        
+
+
+        @media(max-width:480px) {
+            .box img {
+                 width: 90vw;
+            }
+              .box h2, .box h3 {
+                 font-size: 17px;
+              }
+              button {
+                font-size: 15px;
+              }
+        }
+
+
+        @media(max-height:380px) {
+           .box img {
+            object-fit: contain;
+           }
+           button {
+            padding: 10px;
+            font-size: 12px;
+           }
+           .box h2, .box h3 {
+             font-size: 14px;
+           }
+        }
